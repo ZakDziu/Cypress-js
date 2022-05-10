@@ -8,7 +8,7 @@ context('My test task for Pecode company', () => {
         cy.get('input[value="Login"]').should('be.visible')
       })
 
-      it('Login withoit creadentitals', () => {
+      it('Login without creadentitals', () => {
         cy.get('input[value="Login"]').click()
         cy.contains("Please enter your password.").should('be.visible')
         cy.contains("Please enter username.").should('be.visible')
